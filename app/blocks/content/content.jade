@@ -1,5 +1,25 @@
+mixin my_skill(skill)
+	li
+		.row_checkbox_block
+			.row_checkbox_block_img
+				img(src='checkbox_border.png')
+				.row_checkbox_block_input
+					input(type='checkbox')
+			label= skill
+
+mixin my_future(plan)
+	.plans_future_form_radio
+		.plans_future_form_radio_custom
+			.plans_future_form_radio_custom_ellipse
+				img(src='radio_ellipse.png')
+			.plans_future_form_radio_custom_checked
+				img(src='radio_ellipse_marker.png')
+			input(type='radio' name='future' value='')
+		span= plan
+
 mixin content()
 	+b.content&attributes(attributes)
+			
 			header
 				.header_logo
 					img(src='logo.png' alt='logo')
@@ -7,6 +27,7 @@ mixin content()
 					img(src='header_top_secret.png' alt='logo top secret')
 				.header_title
 					img(src='header_delo.png' alt='title Business')
+			
 			.main_cont
 				section.data
 					form.bio
@@ -31,152 +52,34 @@ mixin content()
 							label Почта
 						input.bio_email(type='email' name='email' value='kroti1972@gmail.com')
 						img(src='bio_under_line_5.png' alt='underline of string 5')
+				
 				section.checkbox
 					h3 Расскажите о себе чекбоксами
 					p.
 						Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. 
 						Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. 
 						Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+					
 					form.row
+						
 						.form_col_1
+							- var values_form_col_1 = ['БЭМ/OOCSS','label Pug (Jade)','Stylus/LESS/SASS','Работаю с SVG','Верстаю семантично','Accessibility (A11Y)','ES2015/ES2016'];
 							ul
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label БЭМ/OOCSS
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Pug (Jade)
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Stylus/LESS/SASS
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Работаю с SVG
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Верстаю семантично
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Accessibility (A11Y)
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label ES2015/ES2016
+								each val in values_form_col_1
+									+my_skill(val)
+						
 						.form_col_2
+							- var values_form_col_2 = ['Gulp/GRUNT','Webpack','Дружу с WebGL','jQuery','Знаю/изучаю Angular','Знаю/изучаю React','Знаю/изучаю Node.js'];
 							ul
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Gulp/GRUNT
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Webpack
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Дружу с WebGL
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label jQuery
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Знаю/изучаю Angular
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Знаю/изучаю React
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Знаю/изучаю Node.js
+								each val in values_form_col_2
+									+my_skill(val)
+						
 						.form_col_3
+							- var values_form_col_3 = ['Использую Git','С глазомером всё ок','Читаю blog.csssr.ru','Я ленивый(-ая)','У меня хороший английский'];
 							ul
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox' checked)
-										label Использую Git
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox' checked)
-										label С глазомером всё ок
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label Читаю blog.csssr.ru
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox' checked)
-										label Я ленивый(-ая)
-								li
-									.row_checkbox_block
-										.row_checkbox_block_img
-											img(src='checkbox_border.png')
-											.row_checkbox_block_input
-												input(type='checkbox')
-										label У меня хороший английский
+								each val in values_form_col_3
+									+my_skill(val)
+				
 				section.level_js
 						h3 Уровень владения JavaScript
 						.level_js_block
@@ -204,38 +107,11 @@ mixin content()
 					p.
 						Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
 					form.plans_future_form
-						.plans_future_form_radio
-							.plans_future_form_radio_custom
-								.plans_future_form_radio_custom_ellipse
-									img(src='radio_ellipse.png')
-								.plans_future_form_radio_custom_checked
-									img(src='radio_ellipse_marker.png')
-								input(type='radio' name='future' value='')
-							span Верстать
-						.plans_future_form_radio
-							.plans_future_form_radio_custom
-								.plans_future_form_radio_custom_ellipse
-									img(src='radio_ellipse.png')
-								.plans_future_form_radio_custom_checked
-									img(src='radio_ellipse_marker.png')
-								input(type='radio' name='future' value='')
-							span Прокачиваться в JS
-						.plans_future_form_radio
-							.plans_future_form_radio_custom
-								.plans_future_form_radio_custom_ellipse
-									img(src='radio_ellipse.png')
-								.plans_future_form_radio_custom_checked
-									img(src='radio_ellipse_marker.png')
-								input(type='radio' name='future' value='')
-							span Менеджерство
-						.plans_future_form_radio
-							.plans_future_form_radio_custom
-								.plans_future_form_radio_custom_ellipse
-									img(src='radio_ellipse.png')
-								.plans_future_form_radio_custom_checked
-									img(src='radio_ellipse_marker.png')
-								input(type='radio' name='future' value='')
-							span Другое
+						
+						- var val_plans = ['Верстать','Прокачиваться в JS','Менеджерство','Другое'];
+						each val_plan in val_plans
+							+my_future(val_plan)
+				
 				section.date_write
 					form
 						.date_write_form
