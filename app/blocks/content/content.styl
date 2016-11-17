@@ -1,6 +1,4 @@
-.content
-	display block
- .page
+.page
 	width 1000px
 	font-family 'PT Sans', sans-serif
 	color #2f1b15
@@ -8,13 +6,14 @@
 	background-image url("../../body_background.jpg")
 	background-repeat no-repeat
 	background-size 1000px
-	background-position: center
+	background-position top center
 	margin 0 auto
 	text-align center
-
+//.content
+//	display block
 	header
-		width 100%
 		float left
+		width 100%
 		
 		.header_logo
 			float left
@@ -76,6 +75,7 @@
 					float right
 
 		.checkbox
+			width 770px
 			margin-top 69px
 			float left
 			h3
@@ -105,16 +105,56 @@
 					width 100%
 					float left
 					margin-bottom 17px
-					label
+					span
 						float left
 						margin-left 29px
+					&_img
+						position absolute
 					&_input
 						position absolute
 						top -4px
 						left 3px
-						//display none
-					&_img
+						opacity 0
+					&_checked
 						position absolute
+						z-index 1000
+						top -28px
+						left 0px
+						p
+							font-size 30px
+							color #2f1b15
+							font-style italic
+							opacity 0
+				.form_col_1
+					li:nth-child(1)
+						p
+							opacity 1
+					li:nth-child(2)
+						p
+							opacity 1
+					li:nth-child(3)
+						p
+							opacity 1
+				.form_col_2
+					li:nth-child(1)
+						p
+							opacity 1
+
+							opacity 1
+					li:nth-child(4)
+						p
+							opacity 1
+
+				.form_col_3
+					li:nth-child(1)
+						p
+							opacity 1
+					li:nth-child(2)
+						p
+							opacity 1
+					li:nth-child(4)
+						p
+							opacity 1
 		.level_js
 			float left
 			margin-top 45px
@@ -126,6 +166,7 @@
 				&_marker
 					position absolute
 					top 28px
+					left 258px
 				&_line_horiz
 					position absolute
 					top 35px
@@ -144,6 +185,27 @@
 					position absolute
 					top 45px
 					left 759px
+				&_text
+					width 770px
+					font-size 13px
+					font-weight bold
+					color #37221b
+					position absolute
+					top 77px
+					left 3px
+					&_1
+						float left
+						width 149px
+					&_2
+						float left
+						width 228px
+					&_3
+						float left
+						width 180px
+					&_4
+						float right
+						text-align right
+						width 166px
 		.talk_words
 			float left
 			margin-top 142px
@@ -182,8 +244,8 @@
 				color #464542
 				margin-top 13px
 			&_form
-				width 100%
 				float left
+				width 100%
 				margin-top 24px
 				&_radio
 					width auto
@@ -193,23 +255,27 @@
 						position relative
 						&_ellipse
 							position absolute
-						&_checked
-							position absolute
-							top 7px
-							left 7px
 						input
 							position absolute
 							top 7px
 							left 7px
+							display none
 					span
 						font-size 20px
 						font-weight bold
 						width auto
 						margin 5px 0 0 33px
 						float left
+				&_checked
+					position absolute
+					img
+						position absolute
+						top 7px
+						left 7px
+						opacity 0
 		.date_write
-			width 100%
 			float left
+			width 770px
 			margin 106px 0 72px 0
 			&_form
 				width auto
@@ -236,4 +302,3 @@
 					position absolute
 					left 184 px
 					bottom 3px
-    

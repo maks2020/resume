@@ -1,0 +1,357 @@
+.page {
+  width: 1000px;
+  font-family: 'PT Sans', sans-serif;
+  color: #2f1b15;
+  line-height: 1;
+  background-image: url("../../body_background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-position: top center;
+  margin: 0 auto;
+  text-align: center;
+}
+header {
+  float: left;
+  width: 100%;
+}
+header .header_logo {
+  float: left;
+  margin: 69px 0 0 115px;
+}
+header .header_top_secret {
+  float: right;
+  margin: 48px 54px 0 0;
+}
+header .header_title {
+  padding-top: 163px;
+}
+.main_cont {
+  width: 770px;
+  margin: 26px 0 0 113px;
+  float: left;
+  text-align: left;
+}
+.main_cont .data {
+  float: left;
+}
+.main_cont .data .bio {
+  float: left;
+}
+.main_cont .data .bio_name {
+  width: 142px;
+}
+.main_cont .data .bio_year_born {
+  width: 148px;
+}
+.main_cont .data .bio_address {
+  width: 192px;
+}
+.main_cont .data .bio_id_skype,
+.main_cont .data .bio_email {
+  width: 63px;
+}
+.main_cont .data .bio input {
+  float: left;
+  font-family: 'Courier New', sans-serif;
+  color: #231f20;
+  font-size: 30px;
+  font-weight: normal;
+  border: none;
+  background: rgba(255,255,255,0);
+  padding: 20px 0 8px 31px;
+}
+.main_cont .data .bio input.bio_name {
+  width: 620px;
+}
+.main_cont .data .bio input.bio_year_born {
+  width: 145px;
+}
+.main_cont .data .bio input.bio_address {
+  width: 500px;
+}
+.main_cont .data .bio input.bio_id_skype,
+.main_cont .data .bio input.bio_email {
+  width: 400px;
+}
+.main_cont .data .bio_label {
+  float: left;
+  line-height: 1;
+  padding-top: 44px;
+  font-size: 23px;
+  font-weight: bold;
+}
+.main_cont .data .bio img {
+  width: auto;
+  float: right;
+}
+.main_cont .checkbox {
+  width: 770px;
+  margin-top: 69px;
+  float: left;
+}
+.main_cont .checkbox h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.main_cont .checkbox p {
+  font-size: 15px;
+  width: 755px;
+  line-height: 1.3;
+  color: #464542;
+  margin-top: 13px;
+}
+.main_cont .checkbox .row {
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 33px;
+  float: left;
+}
+.main_cont .checkbox .row .form_col_1 {
+  width: 258px;
+  float: left;
+}
+.main_cont .checkbox .row .form_col_2 {
+  width: 270px;
+  float: left;
+}
+.main_cont .checkbox .row .form_col_3 {
+  width: 242px;
+  float: left;
+}
+.main_cont .checkbox .row_checkbox_block {
+  width: 100%;
+  float: left;
+  margin-bottom: 17px;
+}
+.main_cont .checkbox .row_checkbox_block span {
+  float: left;
+  margin-left: 29px;
+}
+.main_cont .checkbox .row_checkbox_block_img {
+  position: absolute;
+}
+.main_cont .checkbox .row_checkbox_block_input {
+  position: absolute;
+  top: -4px;
+  left: 3px;
+  opacity: 0;
+}
+.main_cont .checkbox .row_checkbox_block_checked {
+  position: absolute;
+  z-index: 1000;
+  top: -28px;
+  left: 0px;
+}
+.main_cont .checkbox .row_checkbox_block_checked p {
+  font-size: 30px;
+  color: #2f1b15;
+  font-style: italic;
+  opacity: 0;
+}
+.main_cont .checkbox .row .form_col_1 li:nth-child(1) p {
+  opacity: 1;
+}
+.main_cont .checkbox .row .form_col_1 li:nth-child(2) p {
+  opacity: 1;
+}
+.main_cont .checkbox .row .form_col_1 li:nth-child(3) p {
+  opacity: 1;
+}
+.main_cont .checkbox .row .form_col_2 li:nth-child(1) p {
+  opacity: 1;
+  opacity: 1;
+}
+.main_cont .checkbox .row .form_col_2 li:nth-child(4) p {
+  opacity: 1;
+}
+.main_cont .checkbox .row .form_col_3 li:nth-child(1) p {
+  opacity: 1;
+}
+.main_cont .checkbox .row .form_col_3 li:nth-child(2) p {
+  opacity: 1;
+}
+.main_cont .checkbox .row .form_col_3 li:nth-child(4) p {
+  opacity: 1;
+}
+.main_cont .level_js {
+  float: left;
+  margin-top: 45px;
+}
+.main_cont .level_js h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.main_cont .level_js_block {
+  position: relative;
+}
+.main_cont .level_js_block_marker {
+  position: absolute;
+  top: 28px;
+  left: 258px;
+}
+.main_cont .level_js_block_line_horiz {
+  position: absolute;
+  top: 35px;
+}
+.main_cont .level_js_block_line_left_side {
+  position: absolute;
+  top: 45px;
+}
+.main_cont .level_js_block_line_middle_mark_1 {
+  position: absolute;
+  top: 45px;
+  left: 148px;
+}
+.main_cont .level_js_block_line_middle_mark_2 {
+  position: absolute;
+  top: 45px;
+  left: 374px;
+}
+.main_cont .level_js_block_line_right_side {
+  position: absolute;
+  top: 45px;
+  left: 759px;
+}
+.main_cont .level_js_block_text {
+  width: 770px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #37221b;
+  position: absolute;
+  top: 77px;
+  left: 3px;
+}
+.main_cont .level_js_block_text_1 {
+  float: left;
+  width: 149px;
+}
+.main_cont .level_js_block_text_2 {
+  float: left;
+  width: 228px;
+}
+.main_cont .level_js_block_text_3 {
+  float: left;
+  width: 180px;
+}
+.main_cont .level_js_block_text_4 {
+  float: right;
+  text-align: right;
+  width: 166px;
+}
+.main_cont .talk_words {
+  float: left;
+  margin-top: 142px;
+}
+.main_cont .talk_words h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.main_cont .talk_words p {
+  font-size: 15px;
+  width: 755px;
+  line-height: 1.3;
+  color: #464542;
+  margin-top: 13px;
+}
+.main_cont .talk_words_text_area {
+  top: 23px;
+}
+.main_cont .talk_words_text_area textarea {
+  width: 771px;
+  height: 180px;
+  font-family: 'Courier New', sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+  border: none;
+  background: none;
+  background-image: url("../../text_area_line.png");
+  background-repeat: y-repeat;
+  background-position: 0px 23px;
+}
+.main_cont .plans_future {
+  float: left;
+  margin-top: 53px;
+}
+.main_cont .plans_future h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.main_cont .plans_future p {
+  font-size: 15px;
+  width: 755px;
+  line-height: 1.3;
+  color: #464542;
+  margin-top: 13px;
+}
+.main_cont .plans_future_form {
+  float: left;
+  width: 100%;
+  margin-top: 24px;
+}
+.main_cont .plans_future_form_radio {
+  width: auto;
+  margin-right: 20px;
+  float: left;
+}
+.main_cont .plans_future_form_radio_custom {
+  position: relative;
+}
+.main_cont .plans_future_form_radio_custom_ellipse {
+  position: absolute;
+}
+.main_cont .plans_future_form_radio_custom input {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  display: none;
+}
+.main_cont .plans_future_form_radio span {
+  font-size: 20px;
+  font-weight: bold;
+  width: auto;
+  margin: 5px 0 0 33px;
+  float: left;
+}
+.main_cont .plans_future_form_checked {
+  position: absolute;
+}
+.main_cont .plans_future_form_checked img {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  opacity: 0;
+}
+.main_cont .date_write {
+  float: left;
+  width: 770px;
+  margin: 106px 0 72px 0;
+}
+.main_cont .date_write_form {
+  width: auto;
+  height: 39px;
+  position: relative;
+}
+.main_cont .date_write_form label {
+  width: auto;
+  font-size: 23px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+}
+.main_cont .date_write_form input {
+  font-family: 'Courier New', sans-serif;
+  color: #231f20;
+  font-size: 30px;
+  font-weight: normal;
+  border: none;
+  background: none;
+  position: absolute;
+  left: 198px;
+  bottom: 19px;
+}
+.main_cont .date_write_form img {
+  width: auto;
+  position: absolute;
+  left: 184px;
+  bottom: 3px;
+}
