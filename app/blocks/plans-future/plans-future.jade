@@ -1,0 +1,10 @@
+mixin plans-future()
+	+b.plans-future&attributes(attributes)
+		section.section.plans_future
+			h3 Какие у вас планы на будующее?
+			p.
+				Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+			form.plans_future_form
+				- var val_plans = ['Верстать','Прокачиваться в JS','Менеджерство','Другое'];
+				each val_plan in val_plans
+					+my_future(val_plan)

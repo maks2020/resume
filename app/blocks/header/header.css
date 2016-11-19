@@ -1,0 +1,16 @@
+.header {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.header__logo_left {
+  float: left;
+  margin: 69px 0 0 115px;
+}
+.header__logo_right {
+  float: right;
+  margin: 48px 54px 0 0;
+}
+.header__title_pos {
+  padding-top: 163px;
+}
