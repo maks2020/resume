@@ -1,163 +1,238 @@
-.content .checkbox,
-display block .checkbox {
+.content .main_cont,
+display block .main_cont {
+  width: 770px;
+  margin: 26px 0 0 113px;
+  float: left;
+  text-align: left;
+}
+.content .main_cont .data,
+display block .main_cont .data {
+  float: left;
+}
+.content .main_cont .data .bio,
+display block .main_cont .data .bio {
+  float: left;
+}
+.content .main_cont .data .bio_name,
+display block .main_cont .data .bio_name {
+  width: 142px;
+}
+.content .main_cont .data .bio_year_born,
+display block .main_cont .data .bio_year_born {
+  width: 148px;
+}
+.content .main_cont .data .bio_address,
+display block .main_cont .data .bio_address {
+  width: 192px;
+}
+.content .main_cont .data .bio_id_skype,
+display block .main_cont .data .bio_id_skype,
+.content .main_cont .data .bio_email,
+display block .main_cont .data .bio_email {
+  width: 63px;
+}
+.content .main_cont .data .bio input,
+display block .main_cont .data .bio input {
+  float: left;
+  font-family: 'Courier New', sans-serif;
+  color: #231f20;
+  font-size: 30px;
+  font-weight: normal;
+  border: none;
+  background: rgba(255,255,255,0);
+  padding: 20px 0 8px 31px;
+}
+.content .main_cont .data .bio input.bio_name,
+display block .main_cont .data .bio input.bio_name {
+  width: 620px;
+}
+.content .main_cont .data .bio input.bio_year_born,
+display block .main_cont .data .bio input.bio_year_born {
+  width: 145px;
+}
+.content .main_cont .data .bio input.bio_address,
+display block .main_cont .data .bio input.bio_address {
+  width: 500px;
+}
+.content .main_cont .data .bio input.bio_id_skype,
+display block .main_cont .data .bio input.bio_id_skype,
+.content .main_cont .data .bio input.bio_email,
+display block .main_cont .data .bio input.bio_email {
+  width: 400px;
+}
+.content .main_cont .data .bio_label,
+display block .main_cont .data .bio_label {
+  float: left;
+  line-height: 1;
+  padding-top: 44px;
+  font-size: 23px;
+  font-weight: bold;
+}
+.content .main_cont .data .bio img,
+display block .main_cont .data .bio img {
+  width: auto;
+  float: right;
+}
+.content .main_cont .checkbox,
+display block .main_cont .checkbox {
   width: 770px;
   margin-top: 69px;
   float: left;
 }
-.content .checkbox h3,
-display block .checkbox h3 {
+.content .main_cont .checkbox h3,
+display block .main_cont .checkbox h3 {
   font-size: 24px;
   font-weight: bold;
 }
-.content .checkbox p,
-display block .checkbox p {
+.content .main_cont .checkbox p,
+display block .main_cont .checkbox p {
   font-size: 15px;
   width: 755px;
   line-height: 1.3;
   color: #464542;
   margin-top: 13px;
 }
-.content .checkbox .row,
-display block .checkbox .row {
+.content .main_cont .checkbox .row,
+display block .main_cont .checkbox .row {
   font-size: 21px;
   font-weight: bold;
   margin-top: 33px;
   float: left;
 }
-.content .checkbox .row .form_col_1,
-display block .checkbox .row .form_col_1 {
+.content .main_cont .checkbox .row .form_col_1,
+display block .main_cont .checkbox .row .form_col_1 {
   width: 258px;
   float: left;
 }
-.content .checkbox .row .form_col_2,
-display block .checkbox .row .form_col_2 {
+.content .main_cont .checkbox .row .form_col_2,
+display block .main_cont .checkbox .row .form_col_2 {
   width: 270px;
   float: left;
 }
-.content .checkbox .row .form_col_3,
-display block .checkbox .row .form_col_3 {
+.content .main_cont .checkbox .row .form_col_3,
+display block .main_cont .checkbox .row .form_col_3 {
   width: 242px;
   float: left;
 }
-.content .checkbox .row_checkbox_block,
-display block .checkbox .row_checkbox_block {
+.content .main_cont .checkbox .row_checkbox_block,
+display block .main_cont .checkbox .row_checkbox_block {
   width: 100%;
   float: left;
   margin-bottom: 17px;
 }
-.content .checkbox .row_checkbox_block span,
-display block .checkbox .row_checkbox_block span {
+.content .main_cont .checkbox .row_checkbox_block span,
+display block .main_cont .checkbox .row_checkbox_block span {
   float: left;
   margin-left: 29px;
 }
-.content .checkbox .row_checkbox_block_img,
-display block .checkbox .row_checkbox_block_img {
+.content .main_cont .checkbox .row_checkbox_block_img,
+display block .main_cont .checkbox .row_checkbox_block_img {
   position: absolute;
 }
-.content .checkbox .row_checkbox_block_input,
-display block .checkbox .row_checkbox_block_input {
+.content .main_cont .checkbox .row_checkbox_block_input,
+display block .main_cont .checkbox .row_checkbox_block_input {
   position: absolute;
   top: -4px;
   left: 3px;
   opacity: 0;
 }
-.content .checkbox .row_checkbox_block_checked,
-display block .checkbox .row_checkbox_block_checked {
+.content .main_cont .checkbox .row_checkbox_block_checked,
+display block .main_cont .checkbox .row_checkbox_block_checked {
   position: absolute;
   z-index: 1000;
   top: -28px;
   left: 0px;
 }
-.content .checkbox .row_checkbox_block_checked p,
-display block .checkbox .row_checkbox_block_checked p {
+.content .main_cont .checkbox .row_checkbox_block_checked p,
+display block .main_cont .checkbox .row_checkbox_block_checked p {
   font-size: 30px;
   color: #2f1b15;
   font-style: italic;
   opacity: 0;
 }
-.content .checkbox .row .form_col_1 li:nth-child(1) p,
-display block .checkbox .row .form_col_1 li:nth-child(1) p {
+.content .main_cont .checkbox .row .form_col_1 li:nth-child(1) p,
+display block .main_cont .checkbox .row .form_col_1 li:nth-child(1) p {
   opacity: 1;
 }
-.content .checkbox .row .form_col_1 li:nth-child(2) p,
-display block .checkbox .row .form_col_1 li:nth-child(2) p {
+.content .main_cont .checkbox .row .form_col_1 li:nth-child(2) p,
+display block .main_cont .checkbox .row .form_col_1 li:nth-child(2) p {
   opacity: 1;
 }
-.content .checkbox .row .form_col_1 li:nth-child(3) p,
-display block .checkbox .row .form_col_1 li:nth-child(3) p {
+.content .main_cont .checkbox .row .form_col_1 li:nth-child(3) p,
+display block .main_cont .checkbox .row .form_col_1 li:nth-child(3) p {
   opacity: 1;
 }
-.content .checkbox .row .form_col_2 li:nth-child(1) p,
-display block .checkbox .row .form_col_2 li:nth-child(1) p {
+.content .main_cont .checkbox .row .form_col_2 li:nth-child(1) p,
+display block .main_cont .checkbox .row .form_col_2 li:nth-child(1) p {
   opacity: 1;
   opacity: 1;
 }
-.content .checkbox .row .form_col_2 li:nth-child(4) p,
-display block .checkbox .row .form_col_2 li:nth-child(4) p {
+.content .main_cont .checkbox .row .form_col_2 li:nth-child(4) p,
+display block .main_cont .checkbox .row .form_col_2 li:nth-child(4) p {
   opacity: 1;
 }
-.content .checkbox .row .form_col_3 li:nth-child(1) p,
-display block .checkbox .row .form_col_3 li:nth-child(1) p {
+.content .main_cont .checkbox .row .form_col_3 li:nth-child(1) p,
+display block .main_cont .checkbox .row .form_col_3 li:nth-child(1) p {
   opacity: 1;
 }
-.content .checkbox .row .form_col_3 li:nth-child(2) p,
-display block .checkbox .row .form_col_3 li:nth-child(2) p {
+.content .main_cont .checkbox .row .form_col_3 li:nth-child(2) p,
+display block .main_cont .checkbox .row .form_col_3 li:nth-child(2) p {
   opacity: 1;
 }
-.content .checkbox .row .form_col_3 li:nth-child(4) p,
-display block .checkbox .row .form_col_3 li:nth-child(4) p {
+.content .main_cont .checkbox .row .form_col_3 li:nth-child(4) p,
+display block .main_cont .checkbox .row .form_col_3 li:nth-child(4) p {
   opacity: 1;
 }
-.content .level_js,
-display block .level_js {
+.content .main_cont .level_js,
+display block .main_cont .level_js {
   float: left;
   margin-top: 45px;
 }
-.content .level_js h3,
-display block .level_js h3 {
+.content .main_cont .level_js h3,
+display block .main_cont .level_js h3 {
   font-size: 24px;
   font-weight: bold;
 }
-.content .level_js_block,
-display block .level_js_block {
+.content .main_cont .level_js_block,
+display block .main_cont .level_js_block {
   position: relative;
 }
-.content .level_js_block_marker,
-display block .level_js_block_marker {
+.content .main_cont .level_js_block_marker,
+display block .main_cont .level_js_block_marker {
   position: absolute;
   top: 28px;
   left: 258px;
 }
-.content .level_js_block_line_horiz,
-display block .level_js_block_line_horiz {
+.content .main_cont .level_js_block_line_horiz,
+display block .main_cont .level_js_block_line_horiz {
   position: absolute;
   top: 35px;
 }
-.content .level_js_block_line_left_side,
-display block .level_js_block_line_left_side {
+.content .main_cont .level_js_block_line_left_side,
+display block .main_cont .level_js_block_line_left_side {
   position: absolute;
   top: 45px;
 }
-.content .level_js_block_line_middle_mark_1,
-display block .level_js_block_line_middle_mark_1 {
+.content .main_cont .level_js_block_line_middle_mark_1,
+display block .main_cont .level_js_block_line_middle_mark_1 {
   position: absolute;
   top: 45px;
   left: 148px;
 }
-.content .level_js_block_line_middle_mark_2,
-display block .level_js_block_line_middle_mark_2 {
+.content .main_cont .level_js_block_line_middle_mark_2,
+display block .main_cont .level_js_block_line_middle_mark_2 {
   position: absolute;
   top: 45px;
   left: 374px;
 }
-.content .level_js_block_line_right_side,
-display block .level_js_block_line_right_side {
+.content .main_cont .level_js_block_line_right_side,
+display block .main_cont .level_js_block_line_right_side {
   position: absolute;
   top: 45px;
   left: 759px;
 }
-.content .level_js_block_text,
-display block .level_js_block_text {
+.content .main_cont .level_js_block_text,
+display block .main_cont .level_js_block_text {
   width: 770px;
   font-size: 13px;
   font-weight: bold;
@@ -166,51 +241,51 @@ display block .level_js_block_text {
   top: 77px;
   left: 3px;
 }
-.content .level_js_block_text_1,
-display block .level_js_block_text_1 {
+.content .main_cont .level_js_block_text_1,
+display block .main_cont .level_js_block_text_1 {
   float: left;
   width: 149px;
 }
-.content .level_js_block_text_2,
-display block .level_js_block_text_2 {
+.content .main_cont .level_js_block_text_2,
+display block .main_cont .level_js_block_text_2 {
   float: left;
   width: 228px;
 }
-.content .level_js_block_text_3,
-display block .level_js_block_text_3 {
+.content .main_cont .level_js_block_text_3,
+display block .main_cont .level_js_block_text_3 {
   float: left;
   width: 180px;
 }
-.content .level_js_block_text_4,
-display block .level_js_block_text_4 {
+.content .main_cont .level_js_block_text_4,
+display block .main_cont .level_js_block_text_4 {
   float: right;
   text-align: right;
   width: 166px;
 }
-.content .talk_words,
-display block .talk_words {
+.content .main_cont .talk_words,
+display block .main_cont .talk_words {
   float: left;
   margin-top: 142px;
 }
-.content .talk_words h3,
-display block .talk_words h3 {
+.content .main_cont .talk_words h3,
+display block .main_cont .talk_words h3 {
   font-size: 24px;
   font-weight: bold;
 }
-.content .talk_words p,
-display block .talk_words p {
+.content .main_cont .talk_words p,
+display block .main_cont .talk_words p {
   font-size: 15px;
   width: 755px;
   line-height: 1.3;
   color: #464542;
   margin-top: 13px;
 }
-.content .talk_words_text_area,
-display block .talk_words_text_area {
+.content .main_cont .talk_words_text_area,
+display block .main_cont .talk_words_text_area {
   top: 23px;
 }
-.content .talk_words_text_area textarea,
-display block .talk_words_text_area textarea {
+.content .main_cont .talk_words_text_area textarea,
+display block .main_cont .talk_words_text_area textarea {
   width: 771px;
   height: 180px;
   font-family: 'Courier New', sans-serif;
@@ -222,104 +297,104 @@ display block .talk_words_text_area textarea {
   background-repeat: y-repeat;
   background-position: 0px 23px;
 }
-.content .plans_future,
-display block .plans_future {
+.content .main_cont .plans_future,
+display block .main_cont .plans_future {
   float: left;
   margin-top: 53px;
 }
-.content .plans_future h3,
-display block .plans_future h3 {
+.content .main_cont .plans_future h3,
+display block .main_cont .plans_future h3 {
   font-size: 24px;
   font-weight: bold;
 }
-.content .plans_future p,
-display block .plans_future p {
+.content .main_cont .plans_future p,
+display block .main_cont .plans_future p {
   font-size: 15px;
   width: 755px;
   line-height: 1.3;
   color: #464542;
   margin-top: 13px;
 }
-.content .plans_future_form,
-display block .plans_future_form {
+.content .main_cont .plans_future_form,
+display block .main_cont .plans_future_form {
   float: left;
   width: 100%;
   margin-top: 24px;
 }
-.content .plans_future_form_radio,
-display block .plans_future_form_radio {
+.content .main_cont .plans_future_form_radio,
+display block .main_cont .plans_future_form_radio {
   width: auto;
   margin-right: 20px;
   float: left;
 }
-.content .plans_future_form_radio_custom,
-display block .plans_future_form_radio_custom {
+.content .main_cont .plans_future_form_radio_custom,
+display block .main_cont .plans_future_form_radio_custom {
   position: relative;
 }
-.content .plans_future_form_radio_custom_ellipse,
-display block .plans_future_form_radio_custom_ellipse {
+.content .main_cont .plans_future_form_radio_custom_ellipse,
+display block .main_cont .plans_future_form_radio_custom_ellipse {
   position: absolute;
 }
-.content .plans_future_form_radio_custom input,
-display block .plans_future_form_radio_custom input {
+.content .main_cont .plans_future_form_radio_custom input,
+display block .main_cont .plans_future_form_radio_custom input {
   position: absolute;
   top: 7px;
   left: 7px;
   display: none;
 }
-.content .plans_future_form_radio span,
-display block .plans_future_form_radio span {
+.content .main_cont .plans_future_form_radio span,
+display block .main_cont .plans_future_form_radio span {
   font-size: 20px;
   font-weight: bold;
   width: auto;
   margin: 5px 0 0 33px;
   float: left;
 }
-.content .plans_future_form_checked,
-display block .plans_future_form_checked {
+.content .main_cont .plans_future_form_checked,
+display block .main_cont .plans_future_form_checked {
   position: absolute;
 }
-.content .plans_future_form_checked img,
-display block .plans_future_form_checked img {
+.content .main_cont .plans_future_form_checked img,
+display block .main_cont .plans_future_form_checked img {
   position: absolute;
   top: 7px;
   left: 7px;
   opacity: 0;
 }
-.content .plans_future_form_radio:nth-child(1) img,
-display block .plans_future_form_radio:nth-child(1) img {
+.content .main_cont .plans_future_form_radio:nth-child(1) img,
+display block .main_cont .plans_future_form_radio:nth-child(1) img {
   opacity: 1;
 }
-.content .plans_future_form_radio:nth-child(2) img,
-display block .plans_future_form_radio:nth-child(2) img {
+.content .main_cont .plans_future_form_radio:nth-child(2) img,
+display block .main_cont .plans_future_form_radio:nth-child(2) img {
   opacity: 1;
 }
-.content .plans_future_form_radio:nth-child(4) img,
-display block .plans_future_form_radio:nth-child(4) img {
+.content .main_cont .plans_future_form_radio:nth-child(4) img,
+display block .main_cont .plans_future_form_radio:nth-child(4) img {
   opacity: 1;
 }
-.content .date_write,
-display block .date_write {
+.content .main_cont .date_write,
+display block .main_cont .date_write {
   float: left;
   width: 770px;
   margin: 106px 0 72px 0;
 }
-.content .date_write_form,
-display block .date_write_form {
+.content .main_cont .date_write_form,
+display block .main_cont .date_write_form {
   width: auto;
   height: 39px;
   position: relative;
 }
-.content .date_write_form label,
-display block .date_write_form label {
+.content .main_cont .date_write_form label,
+display block .main_cont .date_write_form label {
   width: auto;
   font-size: 23px;
   font-weight: bold;
   position: absolute;
   bottom: 0px;
 }
-.content .date_write_form input,
-display block .date_write_form input {
+.content .main_cont .date_write_form input,
+display block .main_cont .date_write_form input {
   font-family: 'Courier New', sans-serif;
   color: #231f20;
   font-size: 30px;
@@ -330,8 +405,8 @@ display block .date_write_form input {
   left: 198px;
   bottom: 19px;
 }
-.content .date_write_form img,
-display block .date_write_form img {
+.content .main_cont .date_write_form img,
+display block .main_cont .date_write_form img {
   width: auto;
   position: absolute;
   left: 184px;
