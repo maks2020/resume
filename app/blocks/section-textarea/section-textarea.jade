@@ -1,0 +1,9 @@
+mixin section-textarea()
+	+b.section-textarea&attributes(attributes)
+		+b('section').section-textarea-block
+			+e('h3').title Расскажите о себе словами
+			+e('p').title-text._position
+				|Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR.
+				|Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+			+b('form').section-textarea-form
+				+e('textarea').field(name='about_youself' form='id_about_you' value='Talk about you') БЭМ,PUG,Stylus,Gulp,jQuery - изучаю. Английский - читаю тех. доки.Ленивый - люблю автоматизацию.Верстка+JS.Мотивирован

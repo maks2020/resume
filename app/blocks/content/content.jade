@@ -1,29 +1,9 @@
 include /blocks/bio/bio
 include /blocks/section-checkbox/section-checkbox
 include /blocks/slider/slider
-include /blocks/word-info/word-info
-include /blocks/plans-future/plans-future
-//- mixin my_skill(skill)
-//- 	li
-//- 		label.row_checkbox_block
-//- 			.row_checkbox_block_img
-//- 				img(src='checkbox_border.png')
-//- 				.row_checkbox_block_input
-//- 					input.my_input(type='checkbox' name='skill')
-//- 				.row_checkbox_block_checked
-//- 					p.
-//- 						V
-//- 			span= skill
-
-mixin my_future(plan)
-	.plans_future_form_radio
-		.plans_future_form_radio_custom
-			.plans_future_form_radio_custom_ellipse
-				img(src='radio_ellipse.png')
-			input(type='radio' name='future' value='')
-			.plans_future_form_checked
-				img(src='radio_ellipse_marker.png')
-		span= plan
+include /blocks/section-textarea/section-textarea
+include /blocks/section-check-radio/section-check-radio
+include /blocks/section-date/section-date
 
 mixin content()
 	+b.content&attributes(attributes)
@@ -31,48 +11,10 @@ mixin content()
 			+bio()
 			+section-checkbox()
 			+slider()
+			+section-textarea()
+			+section-check-radio()
+			+section-date()
 
-			//- section.level_js
-			//- 	h3 Уровень владения JavaScript
-			//- 	.level_js_block
-			//- 		.level_js_block_marker
-			//- 			img(src='line_marker.png' alt='marker')
-			//- 		.level_js_block_line_horiz
-			//- 			img(src='line_horiz.png' alt='line horizontal')
-			//- 		.level_js_block_line_left_side
-			//- 			img(src='line_left_side.png' alt='line vertical left')
-			//- 		.level_js_block_line_middle_mark_1
-			//- 			img(src='line_middle_mark.png' alt='line vertical middle')
-			//- 		.level_js_block_line_middle_mark_2
-			//- 			img(src='line_middle_mark.png' alt='line vertical middle')
-			//- 		.level_js_block_line_right_side
-			//- 			img(src='line_right_side.png' alt='line vertical right')
-			//- 		.level_js_block_text
-			//- 			.level_js_block_text_1 Не владею
-			//- 			.level_js_block_text_2 Использую готовые решения
-			//- 			.level_js_block_text_3 Использую готовые решения и умею их переделывать
-			//- 			.level_js_block_text_4 Пишу сложный JS с нуля
-			section.talk_words
-				h3 Расскажите о себе словами
-				p.
-					Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. 
-					Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
-				form.talk_words_text_area
-					textarea(name='about_youself' form='id_about_you' value='Talk about you') БЭМ,PUG,Stylus,Gulp,jQuery - изучаю. Английский - читаю тех. доки.Ленивый - люблю автоматизацию.Верстка+JS.Мотивирован
-			section.section.plans_future
-				h3 Какие у вас планы на будующее?
-				p.
-					Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
-				form.plans_future_form
-					- var val_plans = ['Верстать','Прокачиваться в JS','Менеджерство','Другое'];
-					each val_plan in val_plans
-						+my_future(val_plan)
-			section.date_write
-				form
-					.date_write_form
-						label Дата заполнения 
-						input(type='text' name='date' value='18.10.2016')
-						img(src='date_under_line.png' alt='line under string')
 //-	<script src="custom.js"></script>
 
 

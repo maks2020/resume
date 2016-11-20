@@ -1,0 +1,8 @@
+mixin section-date()
+	+b.section-date&attributes(attributes)
+		+b('section').date-write
+			+b('form').date-form
+				//-+e.block-date
+				+e('label').label-text Дата заполнения 
+				+e('input').field(type='text' name='date' value='18.10.2016')
+				//- +img(src='date_under_line.png' alt='line under string')
