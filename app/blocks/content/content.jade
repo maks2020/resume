@@ -30,76 +30,28 @@ mixin content()
 		.main_cont
 			+bio()
 			+section-checkbox()
-				//- section.data
-				//- 	form.bio
-				//- 		.bio_name.bio_label
-				//- 			label Полное ФИО 
-				//- 		input.bio_name(type='text' name='full_name' value='Спиридонов Максим Александрович')
-				//- 		img(src='bio_under_line_1.png' alt='underline of string 1')
+			+slider()
 
-				//- 		.bio_year_born.bio_label
-				//- 			label Год рождения 
-				//- 		input.bio_year_born(type='text' name='date_born' value='1972')
-				//- 		img(src='bio_under_line_2.png' alt='underline of string 2')
-				//- 		.bio_address.bio_label
-				//- 			label Место жительства 
-				//- 		input.bio_address(type='text' name='address' value='г.Самара, Россия')
-				//- 		img(src='bio_under_line_3.png' alt='underline of string 3')
-				//- 		.bio_id_skype.bio_label
-				//- 			label Скайп
-				//- 		input.bio_id_skype(type='text' name='id_skype' value='msxp1972')
-				//- 		img(src='bio_under_line_4.png' alt='underline of string 4')
-				//- 		.bio_email.bio_label
-				//- 			label Почта
-				//- 		input.bio_email(type='email' name='email' value='kroti1972@gmail.com')
-				//- 		img(src='bio_under_line_5.png' alt='underline of string 5')
-			//- section.checkbox
-			//- 	h3 Расскажите о себе чекбоксами
-			//- 	p.
-			//- 		Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. 
-			//- 		Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. 
-			//- 		Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
-				
-			//- 	form.row
-					
-			//- 		.form_col_1
-			//- 			- var values_form_col_1 = ['БЭМ/OOCSS','label Pug (Jade)','Stylus/LESS/SASS','Работаю с SVG','Верстаю семантично','Accessibility (A11Y)','ES2015/ES2016'];
-			//- 			ul
-			//- 				each val in values_form_col_1
-			//- 					+my_skill(val)
-					
-			//- 		.form_col_2
-			//- 			- var values_form_col_2 = ['Gulp/GRUNT','Webpack','Дружу с WebGL','jQuery','Знаю/изучаю Angular','Знаю/изучаю React','Знаю/изучаю Node.js'];
-			//- 			ul
-			//- 				each val in values_form_col_2
-			//- 					+my_skill(val)
-					
-			//- 		.form_col_3
-			//- 			- var values_form_col_3 = ['Использую Git','С глазомером всё ок','Читаю blog.csssr.ru','Я ленивый(-ая)','У меня хороший английский'];
-			//- 			ul
-			//- 				each val in values_form_col_3
-			//- 					+my_skill(val)
-
-			section.level_js
-				h3 Уровень владения JavaScript
-				.level_js_block
-					.level_js_block_marker
-						img(src='line_marker.png' alt='marker')
-					.level_js_block_line_horiz
-						img(src='line_horiz.png' alt='line horizontal')
-					.level_js_block_line_left_side
-						img(src='line_left_side.png' alt='line vertical left')
-					.level_js_block_line_middle_mark_1
-						img(src='line_middle_mark.png' alt='line vertical middle')
-					.level_js_block_line_middle_mark_2
-						img(src='line_middle_mark.png' alt='line vertical middle')
-					.level_js_block_line_right_side
-						img(src='line_right_side.png' alt='line vertical right')
-					.level_js_block_text
-						.level_js_block_text_1 Не владею
-						.level_js_block_text_2 Использую готовые решения
-						.level_js_block_text_3 Использую готовые решения и умею их переделывать
-						.level_js_block_text_4 Пишу сложный JS с нуля
+			//- section.level_js
+			//- 	h3 Уровень владения JavaScript
+			//- 	.level_js_block
+			//- 		.level_js_block_marker
+			//- 			img(src='line_marker.png' alt='marker')
+			//- 		.level_js_block_line_horiz
+			//- 			img(src='line_horiz.png' alt='line horizontal')
+			//- 		.level_js_block_line_left_side
+			//- 			img(src='line_left_side.png' alt='line vertical left')
+			//- 		.level_js_block_line_middle_mark_1
+			//- 			img(src='line_middle_mark.png' alt='line vertical middle')
+			//- 		.level_js_block_line_middle_mark_2
+			//- 			img(src='line_middle_mark.png' alt='line vertical middle')
+			//- 		.level_js_block_line_right_side
+			//- 			img(src='line_right_side.png' alt='line vertical right')
+			//- 		.level_js_block_text
+			//- 			.level_js_block_text_1 Не владею
+			//- 			.level_js_block_text_2 Использую готовые решения
+			//- 			.level_js_block_text_3 Использую готовые решения и умею их переделывать
+			//- 			.level_js_block_text_4 Пишу сложный JS с нуля
 			section.talk_words
 				h3 Расскажите о себе словами
 				p.
