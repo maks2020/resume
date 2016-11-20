@@ -1,0 +1,18 @@
+mixin bio()
+	+b.bio&attributes(attributes)
+		+b('form').bio-form._position
+			+b.bio-form-block_prop._position
+				+e('label').label(for='full_name') Полное ФИО 
+				+e('input').field._length_627px(type='text' name='full_name' value='Спиридонов Максим Александрович')
+			+b.bio-form-block_prop._position
+				+e('label').label(for='year-born') Год рождения 
+				+e('input').field._length_619px(type='text' name='year-born' value='1972')
+			+b.bio-form-block_prop._position
+				+e('label').label(for='place') Место жительства
+				+e('input').field._length_576px(type='text' name='place' value='г.Самара, Россия')
+			+b.bio-form-block_prop._position
+				+e('label').label(for='id-skype') Скайп
+				+e('input').field._length_697px(type='text' name='id-skype' value='msxp1972')
+			+b.bio-form-block_prop._position
+				+e('label').label(for='email') Почта
+				+e('input').field._length_697px(type='email' name='email' value='m.spiridonov63@gmail.com')
