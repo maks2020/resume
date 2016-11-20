@@ -1,19 +1,19 @@
 include /blocks/bio/bio
-include /blocks/form-checkbox/form-checkbox
+include /blocks/section-checkbox/section-checkbox
 include /blocks/slider/slider
 include /blocks/word-info/word-info
 include /blocks/plans-future/plans-future
-mixin my_skill(skill)
-	li
-		label.row_checkbox_block
-			.row_checkbox_block_img
-				img(src='checkbox_border.png')
-				.row_checkbox_block_input
-					input.my_input(type='checkbox' name='skill')
-				.row_checkbox_block_checked
-					p.
-						V
-			span= skill
+//- mixin my_skill(skill)
+//- 	li
+//- 		label.row_checkbox_block
+//- 			.row_checkbox_block_img
+//- 				img(src='checkbox_border.png')
+//- 				.row_checkbox_block_input
+//- 					input.my_input(type='checkbox' name='skill')
+//- 				.row_checkbox_block_checked
+//- 					p.
+//- 						V
+//- 			span= skill
 
 mixin my_future(plan)
 	.plans_future_form_radio
@@ -29,6 +29,7 @@ mixin content()
 	+b.content&attributes(attributes)
 		.main_cont
 			+bio()
+			+section-checkbox()
 				//- section.data
 				//- 	form.bio
 				//- 		.bio_name.bio_label
@@ -52,32 +53,32 @@ mixin content()
 				//- 			label Почта
 				//- 		input.bio_email(type='email' name='email' value='kroti1972@gmail.com')
 				//- 		img(src='bio_under_line_5.png' alt='underline of string 5')
-			section.checkbox
-				h3 Расскажите о себе чекбоксами
-				p.
-					Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. 
-					Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. 
-					Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+			//- section.checkbox
+			//- 	h3 Расскажите о себе чекбоксами
+			//- 	p.
+			//- 		Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. 
+			//- 		Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. 
+			//- 		Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
 				
-				form.row
+			//- 	form.row
 					
-					.form_col_1
-						- var values_form_col_1 = ['БЭМ/OOCSS','label Pug (Jade)','Stylus/LESS/SASS','Работаю с SVG','Верстаю семантично','Accessibility (A11Y)','ES2015/ES2016'];
-						ul
-							each val in values_form_col_1
-								+my_skill(val)
+			//- 		.form_col_1
+			//- 			- var values_form_col_1 = ['БЭМ/OOCSS','label Pug (Jade)','Stylus/LESS/SASS','Работаю с SVG','Верстаю семантично','Accessibility (A11Y)','ES2015/ES2016'];
+			//- 			ul
+			//- 				each val in values_form_col_1
+			//- 					+my_skill(val)
 					
-					.form_col_2
-						- var values_form_col_2 = ['Gulp/GRUNT','Webpack','Дружу с WebGL','jQuery','Знаю/изучаю Angular','Знаю/изучаю React','Знаю/изучаю Node.js'];
-						ul
-							each val in values_form_col_2
-								+my_skill(val)
+			//- 		.form_col_2
+			//- 			- var values_form_col_2 = ['Gulp/GRUNT','Webpack','Дружу с WebGL','jQuery','Знаю/изучаю Angular','Знаю/изучаю React','Знаю/изучаю Node.js'];
+			//- 			ul
+			//- 				each val in values_form_col_2
+			//- 					+my_skill(val)
 					
-					.form_col_3
-						- var values_form_col_3 = ['Использую Git','С глазомером всё ок','Читаю blog.csssr.ru','Я ленивый(-ая)','У меня хороший английский'];
-						ul
-							each val in values_form_col_3
-								+my_skill(val)
+			//- 		.form_col_3
+			//- 			- var values_form_col_3 = ['Использую Git','С глазомером всё ок','Читаю blog.csssr.ru','Я ленивый(-ая)','У меня хороший английский'];
+			//- 			ul
+			//- 				each val in values_form_col_3
+			//- 					+my_skill(val)
 
 			section.level_js
 				h3 Уровень владения JavaScript

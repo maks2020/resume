@@ -1,0 +1,32 @@
+mixin my_skill(skill)
+	+e('li').skill-el._position
+		+e.check-element._position
+			+e('img').img._position(src='checkbox_border.png' alt='border checkbox')
+			+e('input').input-checkbox._position(type='checkbox' name='skill')
+			+e('span').checked._position V
+			+e('label').name-skill._position= skill
+
+mixin section-checkbox()
+	+b.section-checkbox&attributes(attributes)
+			+e('h3').title Расскажите о себе чекбоксами
+			+e('p').text
+				Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. 
+				Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. 
+				Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+			
+			+b('form').section-checkbox-form
+				
+				+b('ul').section-checkbox-form-column._01_width
+					- var values_form_col_1 = ['БЭМ/OOCSS','label Pug (Jade)','Stylus/LESS/SASS','Работаю с SVG','Верстаю семантично','Accessibility (A11Y)','ES2015/ES2016'];
+						each val in values_form_col_1
+							+my_skill(val)
+				
+				+b('ul').section-checkbox-form-column._02_width
+					- var values_form_col_2 = ['Gulp/GRUNT','Webpack','Дружу с WebGL','jQuery','Знаю/изучаю Angular','Знаю/изучаю React','Знаю/изучаю Node.js'];
+						each val in values_form_col_2
+							+my_skill(val)
+				
+				+b('ul').section-checkbox-form-column._03_width
+					- var values_form_col_3 = ['Использую Git','С глазомером всё ок','Читаю blog.csssr.ru','Я ленивый(-ая)','У меня хороший английский'];
+						each val in values_form_col_3
+							+my_skill(val)
