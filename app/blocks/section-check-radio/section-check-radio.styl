@@ -1,51 +1,51 @@
 .section-check-radio
 	display block
-	.section-check-input
+	&_position
 		float left
 		margin-top 53px
-		&__title
-			font-size 24px
-			font-weight bold
-		&__title-text
-			font-size 15px
-			width 755px
-			line-height 1.3
-			color #464542
-			margin-top 13px
-		.section-check-input-form
+	&__title
+		font-size 24px
+		font-weight bold
+	&__title-text
+		font-size 15px
+		width 755px
+		line-height 1.3
+		color #464542
+		margin-top 13px
+	.section-check-input-form
+		float left
+		width 100%
+		margin-top 24px
+		&__radio
+			width auto
+			margin-right 20px
 			float left
-			width 100%
-			margin-top 24px
-			&__radio
-				width auto
-				margin-right 20px
-				float left
-			&__radio-custom
-				width auto
-				position relative
-			&__custom-ellipse
-				position absolute
-				top 0px
-				left 0px
-			&__field
-				position absolute
-				top 6px
-				left 7px
-				opacity 0
-				z-index 1000
-			&__value-plan
-				font-size 20px
-				font-weight bold
-				width auto
-				margin 5px 0 0 33px
-				float left
-			&__checked
-				position absolute
-				top 7px
-				left 7px
-				opacity 0
-			&__field:checked ~ .section-check-input-form__checked
+		&__radio-custom
+			width auto
+			position relative
+		&__custom-ellipse
+			position absolute
+			top 0px
+			left 0px
+		&__field
+			position absolute
+			top 6px
+			left 7px
+			opacity 0
+			z-index 1000
+		&__value-plan
+			font-size 20px
+			font-weight bold
+			width auto
+			margin 5px 0 0 33px
+			float left
+		&__checked
+			position absolute
+			top 7px
+			left 7px
+			opacity 0
+		&__field:checked ~ .section-check-input-form__checked
+			opacity 1
+		&__radio:nth-child(1) .section-check-input-form__checked
 				opacity 1
-			&__radio:nth-child(1) .section-check-input-form__checked
-					opacity 1
 

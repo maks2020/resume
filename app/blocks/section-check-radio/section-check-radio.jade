@@ -7,9 +7,8 @@ mixin my_future(plan)
 		+e('span').value-plan= plan
 
 mixin section-check-radio()
-	+b.section-check-radio&attributes(attributes)
-		+b('section').section-check-input
-				+e('h3').title Какие у вас планы на будующее?
+	+b.section-check-radio._position&attributes(attributes)
+				+e('h3').title Какие у вас планы на будущее?
 				+e('p').title-text
 					|Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
 				+b('form').section-check-input-form
