@@ -1,16 +1,32 @@
 include /blocks/bio/bio
-include /blocks/section-checkbox/section-checkbox
+include /blocks/bio-form/bio-form
+include /blocks/checkbox/checkbox
+include /blocks/checkbox-form/checkbox-form
 include /blocks/slider/slider
-include /blocks/section-textarea/section-textarea
-include /blocks/section-check-radio/section-check-radio
-include /blocks/section-date/section-date
+include /blocks/slider-form/slider-form
+include /blocks/words/words
+include /blocks/words-form/words-form
+include /blocks/switch/switch
+include /blocks/switch-form/switch-form
+include /blocks/date/date
+include /blocks/date-form/date-form
 
 mixin content()
 	+b.content&attributes(attributes)
 			+bio()
-			+section-checkbox()
+				+bio-form('full_name','Полное ФИО','text', 'Спиридонов Максим Александрович')(class='_length_617px')
+				+bio-form('year-born','Год рождения','text', '1972')(class='_length_608px')
+				+bio-form('place','Место жительства','text', 'г.Самара, Россия')(class='_length_564px')
+				+bio-form('id-skype','Скайп','text', 'msxp1972')(class='_length_687px')
+				+bio-form('email','Почта','email', 'm.spiridonov63@gmail.com')(class='_length_687px')
+			+checkbox()
+				+checkbox-form()
 			+slider()
-			+section-textarea()
-			+section-check-radio()
-			+section-date()
+				+slider-form()
+			+words()
+				+words-form()
+			+switch()
+				+switch-form()
+			+date()
+				+date-form()
 

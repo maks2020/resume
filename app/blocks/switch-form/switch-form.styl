@@ -1,0 +1,38 @@
+.switch-form
+	display block
+	width 100%
+	&_position
+		margin-top 24px
+		float left
+	&__radio
+		width auto
+		margin-right 20px
+		float left
+	&__radio-custom
+		width auto
+		position relative
+	&__border
+		position absolute
+		top 0px
+		left 0px
+	&__input
+		position absolute
+		top 6px
+		left 7px
+		opacity 0
+		z-index 1000
+	&__value-plan
+		font-size 20px
+		font-weight bold
+		width auto
+		margin 5px 0 0 33px
+		float left
+	&__checked
+		position absolute
+		top 7px
+		left 7px
+		opacity 0
+	&__input:checked ~ .switch-form__checked
+		opacity 1
+	&__radio:nth-child(1) .switch-form__checked
+			opacity 1

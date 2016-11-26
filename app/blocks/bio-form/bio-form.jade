@@ -1,0 +1,4 @@
+mixin bio-form(name,label_value,type, input_value)
+	+b('form').bio-form._prop._position&attributes(attributes)
+		+e('label').label(for= name)= label_value 
+		+e('input').input(type= type name= name value= input_value)&attributes(attributes)

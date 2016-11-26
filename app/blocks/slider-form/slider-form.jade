@@ -1,0 +1,19 @@
+mixin slider-form()
+	+b('form').slider-form._position&attributes(attributes)
+		+e.marker
+			img(src='line_marker.png' alt='marker')
+		+e.line-horiz
+			img(src='line_horiz.png' alt='line horizontal')
+		+e.line-left-side
+			img(src='line_left_side.png' alt='line vertical left')
+		+e.middle-line-1
+			img(src='line_middle_mark.png' alt='line vertical middle')
+		+e.middle-line-2
+			img(src='line_middle_mark.png' alt='line vertical middle')
+		+e.line-right-side
+			img(src='line_right_side.png' alt='line vertical right')
+		+e.legend-graph._position
+			+e.text-level._position-1 Не владею
+			+e.text-level._position-2 Использую готовые решения
+			+e.text-level._position-3 Использую готовые решения и умею их переделывать
+			+e.text-level._position-4 Пишу сложный JS с нуля

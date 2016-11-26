@@ -1,0 +1,59 @@
+.checkbox-form
+	display block
+	width 100%
+	font-size 21px
+	font-weight bold
+	&_position
+		margin-top 33px
+		float left
+	&__column
+		&_position
+			float left
+		&_01_width
+			width 258px
+		&_02_width
+			width 270px
+		&_03_width
+			width 242px
+		&_01_skill .checkbox-form__skill-el:nth-child(1) .checkbox-form__checked
+		&_01_skill .checkbox-form__skill-el:nth-child(2) .checkbox-form__checked
+		&_01_skill .checkbox-form__skill-el:nth-child(3) .checkbox-form__checked
+		&_02_skill .checkbox-form__skill-el:nth-child(1) .checkbox-form__checked
+		&_02_skill .checkbox-form__skill-el:nth-child(4) .checkbox-form__checked
+		&_03_skill .checkbox-form__skill-el:nth-child(1) .checkbox-form__checked
+		&_03_skill .checkbox-form__skill-el:nth-child(2) .checkbox-form__checked
+		&_03_skill .checkbox-form__skill-el:nth-child(4) .checkbox-form__checked
+			opacity 1
+	&__skill-el
+		width 100%
+		&_position
+			float left
+			margin-bottom 16px
+	&__check-element_position
+		position relative
+	&__name-skill_position
+		float left
+		margin-left 29px
+	&__img
+		&_position
+			position absolute
+			top 0px
+			left 0px
+	&__input
+		opacity 0
+		&_position
+			position absolute
+			top 2px
+			left 3px
+			z-index 1000
+	&__checked
+		font-size 30px
+		color #2f1b15
+		font-style italic
+		opacity 0
+		&_position
+			position absolute
+			top -10px
+			left 0px
+	&__input:checked~.checkbox-form__checked
+		opacity 1

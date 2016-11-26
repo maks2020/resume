@@ -1,0 +1,34 @@
+mixin my_skill_new(skill)
+	+e('ul').column._position&attributes(attributes)
+		each val in skill
+			+e('li').skill-el._position
+				+e.check-element._position
+					+e('img').img._position(src='checkbox_border.png' alt='border checkbox')
+					+e('input').input._position(type='checkbox' name='skill')
+					+e('span').checked._position V
+					+e('label').name-skill._position= val
+
+mixin my_skill(skill)
+	+e('li').skill-el._position
+		+e.check-element._position
+			+e('img').img._position(src='checkbox_border.png' alt='border checkbox')
+			+e('input').input._position(type='checkbox' name='skill')
+			+e('span').checked._position V
+			+e('label').name-skill._position= skill
+
+mixin checkbox-form()
+	+b('form').checkbox-form._position&attributes(attributes)
+		+e('ul').column._position._01_width._01_skill
+			- var values_form_col_1 = ['БЭМ/OOCSS','label Pug (Jade)','Stylus/LESS/SASS','Работаю с SVG','Верстаю семантично','Accessibility (A11Y)','ES2015/ES2016'];
+				each val in values_form_col_1
+					+my_skill(val)
+		
+		+e('ul').column._position._02_width._02_skill
+			- var values_form_col_2 = ['Gulp/GRUNT','Webpack','Дружу с WebGL','jQuery','Знаю/изучаю Angular','Знаю/изучаю React','Знаю/изучаю Node.js'];
+				each val in values_form_col_2
+					+my_skill(val)
+		
+		+e('ul').column._position._03_width._03_skill
+			- var values_form_col_3 = ['Использую Git','С глазомером всё ок','Читаю blog.csssr.ru','Я ленивый(-ая)','У меня хороший английский'];
+				each val in values_form_col_3
+					+my_skill(val)

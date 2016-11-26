@@ -1,0 +1,13 @@
+mixin my_future(plan)
+	+e.radio
+		+e.radio-custom
+			+e('img').border(src='radio_ellipse.png')
+			+e('input').input(type='radio' name='future' value='')
+			+e('img').checked(src='radio_ellipse_marker.png')
+		+e('span').value-plan= plan
+
+mixin switch-form()
+	+b('form').switch-form._position&attributes(attributes)
+		- var val_plans = ['Верстать','Прокачиваться в JS','Менеджерство','Другое'];
+		each val_plan in val_plans
+			+my_future(val_plan)
