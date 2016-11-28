@@ -12,11 +12,11 @@ include /blocks/date/date
 include /blocks/date-form/date-form
 
 mixin content()
-	+b.content&attributes(attributes)
+	+b.content._position&attributes(attributes)
 			+bio()
 				+bio-form('full_name','Полное ФИО','text', 'Спиридонов Максим Александрович')(class='_length_617px')
 				+bio-form('year-born','Год рождения','text', '1972')(class='_length_608px')
-				+bio-form('place','Место жительства','text', 'г.Самара, Россия')(class='_length_564px')
+				+bio-form('place','Место жительства','text', 'г. Самара, Россия')(class='_length_564px')
 				+bio-form('id-skype','Скайп','text', 'msxp1972')(class='_length_687px')
 				+bio-form('email','Почта','email', 'm.spiridonov63@gmail.com')(class='_length_687px')
 			+checkbox()
