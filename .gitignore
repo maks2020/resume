@@ -16,6 +16,7 @@ dist
 *.swp
 *.vi
 *~
+*.zip
 
 # OS or Editor folders
 *.sublime-grunt.cache
@@ -41,3 +42,8 @@ bower_components
 node_modules
 npm-debug.log
 .happypack/
+
+#Sublime project files
+*.sublime-project
+*.sublime-workspace
+

@@ -33,7 +33,6 @@ $('.checkbox-form__checked').click(function () {
 	}
 });
 
-
 // // add string in word-form
 // $('.words-form__textarea').scroll(function (){
 // 	let currentHeightTextarea = parseFloat($('.words-form__textarea').css('height'));
