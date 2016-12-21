@@ -1,3 +1,3 @@
-Test work for CSSR
-CSSR template on GULP
+Test work for CSSR\n
+CSSR template on GULP\n
 BEM, JS, JQuery
